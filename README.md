@@ -23,6 +23,7 @@ The software is implemented in python 2.7 and requires the following packages:
 There are two inputs to this model: 
 1. a text file with the training data --- the system assumes that the documents can be tokenized using whitespace (we recommend pre-tokenzing with the appropriate tokenizer) and that all messages from a user appear sequentially (see `raw_data/sample.txt` for an example)
 2. a text file with pre-trained word embeddings (e.g. word2vec, glove)
+3. user_id, tweet_id, text, timestamp
 
 The output is a text file with a format similar to word2vec's, i.e. each line consists of `user_id \t embedding`.
 
